@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.wallpapersden.com/image/download/mix-colour-background_a2ltZmiUmZqaraWkpJRobWllrWdma2U.jpg'); /* Replace 'your-image-url.jpg' with the actual URL of your image */
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+.heading {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0509fa;
+    font-size: 50px;
+    text-align: center;
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 80px; /* Adjust top margin to create space for the heading */
+}
+
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-wrap: break-word; /* Ensure long words are broken to fit the container */
+    word-wrap: break-word; /* Ensure long words are broken to fit the container */
+    word-break: break-all; /* Ensure long words are broken to fit the container */
+    height: 2.5em; /* Set a height to limit the size */
+    line-height: 1.2; /* Adjust line height for better readability */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn.operator {
+    background-color: #f9a825;
+}
+
+.btn.equals {
+    background-color: #2196f3;
+    grid-column: span 3;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.operator:hover {
+    background-color: #f57f17;
+}
+
+.btn.equals:hover {
+    background-color: #1976d2;
+}
